@@ -2,8 +2,9 @@
   "name": "my-turborepo",
   "private": true,
   "scripts": {
-    "build": "turbo run build",
+    "build:production": "turbo run build",
     "dev": "turbo run dev",
+    "build:local": "turbo run build --cache=local:rw,remote:r",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
