@@ -140,7 +140,10 @@ rm -rf .turbo/cache
 # Delete build outputs
 rm -rf apps/*/.next
 
-# Now build - MUST download from remote
-pnpm build
+# Now build - ONLY download from remote
+pnpm run build:local
+
+# Now build - with read write remote
+pnpm run build:production
 
 pnpm dlx turbo run build --summarize

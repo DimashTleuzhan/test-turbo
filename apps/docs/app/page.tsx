@@ -33,7 +33,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>apps/docs/app_test1/page.tsx</code>
+            Get started by editing <code>apps/docs/app_test2/page.tsx</code>
           </li>
           <li>Save and see your changes instantly.</li>
         </ol>
