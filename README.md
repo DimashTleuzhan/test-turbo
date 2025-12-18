@@ -133,3 +133,14 @@ Learn more about the power of Turborepo:
 - [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
 - [Configuration Options](https://turborepo.com/docs/reference/configuration)
 - [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+
+# Delete local cache
+rm -rf .turbo/cache
+
+# Delete build outputs
+rm -rf apps/*/.next
+
+# Now build - MUST download from remote
+pnpm build
+
+pnpm dlx turbo run build --summarize
